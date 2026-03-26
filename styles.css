@@ -52,6 +52,7 @@ h1 {
   margin-bottom: 0.2em;
 }
 
+/* Mobile Breakpoint: Automatically scales down large heading text when the screen is phone-sized (under 480px width) to prevent layout breaking and horizontal scrolling. */
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 200%;
@@ -85,7 +86,8 @@ a {
   text-decoration: none;
 }
 
-/* Center container in the page */
+/* Responsive Desktop & Mobile Container */
+/* 80vw ensures fluid scaling on narrow phones. max-width 480px locks it cleanly in the center for wider desktop/widescreen displays without stretching. */
 .box {
   width: 80vw;
   max-width: 480px;
