@@ -1,4 +1,4 @@
-# Emilio Quezada - Personal Website
+# Personal Website
 
 Welcome to the repository for my personal website, live at [www.emilioquezada.com](https://www.emilioquezada.com).
 
