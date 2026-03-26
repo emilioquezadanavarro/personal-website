@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio Quezada - AI Engineer</title>
+    <meta name="description" content="Personal website of Emilio Antonio Quezada Navarro.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="files/websitepicture.png">
+    
+    <!-- Fira Code Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- Custom CSS Toggle Switch -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="theme-checkbox" aria-label="Toggle dark mode">
+                <input type="checkbox" id="theme-checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+        
+        <div class="container">
+            <!-- Using the actual photo path -->
+            <img id="profile-pic" class="image-circle" src="files/websitepicture.png" alt="Emilio Quezada">
+        </div>
+
+        <h1>Hi.</h1>
+        <h2>My name is <span class="stress">Emilio</span>.</h2>
+
+        <h3>
+            I am a product-minded AI Engineer. My interests include Generative AI, agentic workflows, and applying LLMs
+            to solve complex operational challenges.
+            <!-- Add a short bio here -->
+        </h3>
+
+        <!-- Icons (LinkedIn, GitHub & Email) -->
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/emilioquezadanavarro" target="_blank" aria-label="LinkedIn"
+                class="icon-link">
+                <i class="fa-brands fa-linkedin icon"></i>
+            </a>
+            <a href="https://github.com/emilioquezadanavarro" target="_blank" aria-label="GitHub" class="icon-link">
+                <i class="fa-brands fa-github icon"></i>
+            </a>
+            <a href="mailto:contact@emilioquezada.com" aria-label="Email" class="icon-link">
+                <i class="fa-solid fa-envelope icon"></i>
+            </a>
+        </div>
+
+        <!-- CV Button -->
+        <div class="button-container">
+            <a href="files/AI%20Engineer-%20Emilio%20Quezada.pdf" class="button-rounded" target="_blank">Read my CV</a>
+        </div>
+    </div>
+
+    <script>
+        // Custom Dark/Light Toggle Switch
+        const toggleCheckbox = document.getElementById('theme-checkbox');
+        const profilePic = document.getElementById('profile-pic');
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        // Initialize theme based on user's system preference
+        if (prefersDarkScheme.matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggleCheckbox.checked = false; // Dark Mode (thumb left)
+            profilePic.src = 'files/websitepicture.png'; 
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            toggleCheckbox.checked = true; // Light Mode (thumb right)
+            profilePic.src = 'files/websitepicture_color.png'; 
+        }
+
+        toggleCheckbox.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                // Switch to Light
+                document.documentElement.setAttribute('data-theme', 'light');
+                profilePic.src = 'files/websitepicture_color.png';
+            } else {
+                // Switch to Dark
+                document.documentElement.setAttribute('data-theme', 'dark');
+                profilePic.src = 'files/websitepicture.png';
+            }
+        });
+    </script>
+</body>
+
+</html>

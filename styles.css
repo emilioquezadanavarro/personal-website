@@ -1,0 +1,225 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: black;
+  --accent-color: #f5f258; /* Color-matched yellow from the profile picture */
+  --icon-hover-color: #f5f258;
+  --stress-bg: var(--accent-color);
+  --stress-text: black;
+  --button-bg: var(--accent-color);
+  --button-text: black;
+  --link-color: black;
+  --link-decoration: underline;
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: white;
+  --accent-color: #8c009b;
+  --icon-hover-color: #8c009b;
+  --stress-bg: white;
+  --stress-text: black;
+  --button-bg: white;
+  --button-text: black;
+  --link-color: white;
+  --link-decoration: underline;
+}
+
+html {
+  display: table;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: table-cell;
+  font-family: "Fira Code", monospace;
+  vertical-align: middle;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  font-size: 300%;
+  font-weight: normal;
+  margin-bottom: 0.2em;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 200%;
+    word-wrap: break-word;
+  }
+}
+
+h2 {
+  font-size: 180%;
+  font-weight: 300; /* Lighter font weight */
+  padding: 10px 0 20px 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+  text-decoration-color: var(--accent-color);
+  text-decoration-thickness: 3px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-link {
+  text-decoration: none;
+}
+
+/* Center container in the page */
+.box {
+  width: 80vw;
+  max-width: 480px;
+  margin: 0 auto; /* Horizontally centered */
+  position: relative;
+}
+
+.container {
+  height: 128px;
+  padding: 20px 0 10px 0;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.image-circle {
+  border-radius: 100%;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+/* Icons */
+.icon-link {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon {
+  color: var(--text-color);
+  font-size: 36px; /* Slightly larger */
+  padding: 10px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: var(--icon-hover-color);
+  transform: translateY(-3px);
+}
+
+.icons {
+  padding-top: 5vh;
+  display: flex;
+  gap: 15px; /* Spacing between icons */
+}
+
+/* Special text color */
+.stress {
+  background-color: var(--stress-bg);
+  color: var(--stress-text);
+  font-weight: normal;
+  padding: 0 4px;
+  border-radius: 3px;
+}
+
+/* Button */
+.button-rounded {
+  display: inline-block;
+  background-color: var(--button-bg);
+  border: 2px solid var(--button-bg);
+  border-radius: 9999px;
+  color: var(--button-text);
+  margin: 0.4em 0;
+  padding: 0.75em 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button-rounded:hover {
+  background-color: transparent;
+  color: var(--text-color);
+  border-color: var(--text-color);
+}
+
+.button-container {
+  padding-top: 4vh;
+}
+
+/* Custom Toggle Switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 44px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #dcdcdc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 24px;
+}
+
+.slider:before {
+  background-color: transparent;
+  bottom: 3px;
+  content: "";
+  height: 18px;
+  left: 3px;
+  position: absolute;
+  transition: .4s;
+  width: 18px;
+  border-radius: 50%;
+  /* Creates the crescent moon effect on the left */
+  box-shadow: inset 7px 0px 0px 0px #1a1a1a;
+}
+
+input:checked + .slider {
+  background-color: #ebebeb;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+  /* Solid bright circle (sun) on the right */
+  box-shadow: none;
+  background-color: white;
+}
