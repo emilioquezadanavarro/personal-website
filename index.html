@@ -55,12 +55,14 @@
 
         <section id="about">
             <h2><span class="stress">About me</span></h2>
-            <p>I grew up in the 1990s watching Napster tear the music industry apart, the same industry I'd spend more than a decade working in.</p>
+            <p>I grew up in the 1990s watching Napster rewire the music industry, the same industry I'd spend more than a decade working in.</p>
             <p>Training as a musician taught me discipline and the patience to get things right. Later, as an Audio Engineer, my focus sharpened on something more specific: quality lives in the details you almost miss, and routing complex signal chains gave me an early intuition for how interconnected systems behave under pressure.</p>
-            <p>As an Operations Manager, I led multi-site teams, cut rollout implementation time by 50%, and reduced fault rates by 20%, work that gave me a real understanding of how businesses function and where they break.</p>
+            <p>As an Operations Manager, I led multi-site teams across IT, Finance, and HR, untangling the recurring failure points behind slow rollouts and inconsistent service, work that gave me a real understanding of how businesses function and where they break.</p>
             <p>Surrounded by the tools reshaping my industry, I made a deliberate decision to stop being the person who uses them and become the person who builds them.</p>
-            <p>I stepped away and reskilled in Software Development, AI Engineering and I am currently expanding my stack with AWS Cloud Engineering.</p>
+            <p>I stepped away and reskilled in Software Development, AI Engineering and AWS Cloud Engineering.</p>
+            <p>I'm currently deepening my knowledge of JavaScript and learning to build with React to round out the front-end side of that pipeline.</p>
             <p>I'm now looking for a role where I can work across the full product pipeline, from idea validation to deployment.</p>
+
             
             <div class="button-container">
                 <a href="files/AI%20Engineer-Emilio%20Quezada.pdf" class="button-rounded" target="_blank">Read my CV</a>
@@ -81,19 +83,43 @@
                 </p>
                 <div class="project-stack">
                     <span class="tag">Python</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
                     <span class="tag">Flask</span>
-                    <span class="tag">LLM</span>
-                    <span class="tag">API</span>
                     <span class="tag">LangChain</span>
                     <span class="tag">Langfuse</span>
+                    <span class="tag">ChromaDB</span>
+                    <span class="tag">OpenAI</span>
+                    <span class="tag">Google Gemini</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">AWS</span>
+
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
-                    <h3 class="project-title">MovieWebApp</h3>
+                    <h3 class="project-title">Franz 🤖</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/emilioquezadanavarro/soundfabrik-studio-assistant" target="_blank">GitHub ↗</a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    A RAG studio assistant chatbot for a real Berlin recording studio. Guardrails, retrieval evals, lead capture into Supabase.
+                </p>
+                <div class="project-stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">ChromaDB</span>
+                    <span class="tag">Claude API</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">LangSmith</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">RAG Evaluation</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">MovieWebApp 🎬</h3>
                     <div class="project-links">
                         <a href="https://github.com/emilioquezadanavarro/MovieWebApp" target="_blank">GitHub ↗</a>
                     </div>
@@ -112,7 +138,7 @@
 
             <div class="project-card">
                 <div class="project-header">
-                    <h3 class="project-title">MasterBlog API</h3>
+                    <h3 class="project-title">MasterBlog API ✍🏻</h3>
                     <div class="project-links">
                         <a href="https://github.com/emilioquezadanavarro/masterblog-API" target="_blank">GitHub ↗</a>
                     </div>
@@ -133,65 +159,100 @@
         <section id="stack">
             <h2><span class="stress">Stack</span></h2>
             <div class="stack-group">
-                <span class="stack-label">AI / ML</span>
+                <span class="stack-label">AI & LLM Core</span>
                 <div class="stack-items">
                     <span class="tag">Generative AI</span>
                     <span class="tag">LLMs</span>
-                    <span class="tag">Agentic AI</span>
-                    <span class="tag">RAG</span>
-                    <span class="tag">Multi-Agent Architecture</span>
-                    <span class="tag">NLP</span>
+                    <span class="tag">Retrieval-Augmented Generation (RAG)</span>
+                    <span class="tag">Agentic AI / Multi-Agent Systems</span>
+                    <span class="tag">Prompt Engineering</span>
+                    <span class="tag">LLM Evaluation</span>
+                    <span class="tag">Text Preprocessing & Embeddings</span>
                 </div>
             </div>
             <div class="stack-group">
-                <span class="stack-label">Frameworks & Tools</span>
+                <span class="stack-label">AI Frameworks & Orchestration</span>
                 <div class="stack-items">
                     <span class="tag">LangChain</span>
-                    <span class="tag">Langfuse</span>
-                    <span class="tag">Tavily</span>
-                    <span class="tag">Claude Code</span>
+                    <span class="tag">Hand-rolled Agent Orchestration (multi-hop tool-calling on raw SDKs)</span>
+                    <span class="tag">Model-agnostic API Integration (OpenAI, Anthropic, Google Gemini)</span>
                     <span class="tag">n8n</span>
                 </div>
             </div>
             <div class="stack-group">
-                <span class="stack-label">APIs & Models</span>
+                <span class="stack-label">Evaluation & Observability</span>
                 <div class="stack-items">
-                    <span class="tag">OpenAI API</span>
-                    <span class="tag">Gemini API</span>
-                    <span class="tag">Anthropic API</span>
+                    <span class="tag">LangSmith</span>
+                    <span class="tag">Langfuse</span>
+                    <span class="tag">Custom Evaluation Harnesses</span>
+                    <span class="tag">Hallucination/Grounding Testing</span>
+
                 </div>
             </div>
             <div class="stack-group">
-                <span class="stack-label">Languages & Databases</span>
+                <span class="stack-label">Retrieval & Vector Data</span>
                 <div class="stack-items">
-                    <span class="tag">Python</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">PostgreSQL</span>
                     <span class="tag">ChromaDB</span>
                     <span class="tag">Supabase</span>
+                    <span class="tag">Embeddings</span>
+                    <span class="tag">Semantic search</span>
                 </div>
             </div>
             <div class="stack-group">
-                <span class="stack-label">Full-Stack</span>
+                <span class="stack-label">Backend & Data</span>
                 <div class="stack-items">
-                    <span class="tag">FastAPI</span>
+                    <span class="tag">Python</span>
                     <span class="tag">Flask</span>
                     <span class="tag">RESTful APIs</span>
-                    <span class="tag">Node.js</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">SQLAlchemy</span>
                     <span class="tag">HTML/CSS</span>
+                    <span class="tag">Jinja2</span>
+                    <span class="tag">JavaScript</span>
                 </div>
             </div>
             <div class="stack-group">
-                <span class="stack-label">DevOps & Tooling</span>
+                <span class="stack-label">Cloud & Infrastructure</span>
                 <div class="stack-items">
-                    <span class="tag">Git</span>
-                    <span class="tag">GitHub</span>
+                    <span class="tag">AWS (Lambda, RDS, S3, CloudWatch, IAM)</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">AWS CDK</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">GitHub Actions</span>
                     <span class="tag">CI/CD</span>
-                    <span class="tag">TDD</span>
-                    <span class="tag">VS Code</span>
+                    <span class="tag">OIDC Keyless Authentication</span>
                 </div>
             </div>
+
+            <div class="stack-group">
+                <span class="stack-label">Security</span>
+                <div class="stack-items">
+                    <span class="tag">JWT auth</span>
+                    <span class="tag">Row-level security</span>
+                    <span class="tag">Encrypted-field Search / Blind-Indexing</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <span class="stack-label">Practices</span>
+                <div class="stack-items">
+                    <span class="tag">TDD</span>
+                    <span class="tag">Version Control (GitHub)</span>
+                    <span class="tag">Incident Response & Root-Cause Analysis</span>
+                    <span class="tag">Technical Documentation</span>
+                </div>
+            </div>
+
+            <div class="stack-group">
+                <span class="stack-label">AI Native Dev Tools</span>
+                <div class="stack-items">
+                    <span class="tag">Claude Code</span>
+                    <span class="tag">Cursor</span>
+                    <span class="tag">Codex</span>
+                </div>
+            </div>
+
         </section>
 
         <!-- Icons (LinkedIn, GitHub & Email) -->
