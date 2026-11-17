@@ -18,7 +18,7 @@
     <!-- Fira Code Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
@@ -48,7 +48,7 @@
 
         <h1>Hi.</h1>
         <h1>My name is <span class="stress">Emilio</span>.</h1>
-        <h2>I build AI systems that solve real operational problems.</h2>
+        <h2>I build AI systems that turn real operational problems into working software.</h2>
         <p>Junior AI Engineer · LLM Applications · Agentic Workflows · RAG</p>
 
 
@@ -57,11 +57,13 @@
             <h2><span class="stress">About me</span></h2>
             <p>I grew up in the 1990s watching Napster rewire the music industry, the same industry I'd spend more than a decade working in.</p>
             <p>Training as a musician taught me discipline and the patience to get things right. Later, as an Audio Engineer, my focus sharpened on something more specific: quality lives in the details you almost miss, and routing complex signal chains gave me an early intuition for how interconnected systems behave under pressure.</p>
-            <p>As an Operations Manager, I led multi-site teams across IT, Finance, and HR, untangling the recurring failure points behind slow rollouts and inconsistent service, work that gave me a real understanding of how businesses function and where they break.</p>
+            <p>As an Operations Manager, I managed three studio buildings and led their Site Managers, working with IT, Finance and HR to untangle the recurring failure points behind slow rollouts and inconsistent service. That work gave me a real understanding of how businesses function and where they break.</p>
             <p>Surrounded by the tools reshaping my industry, I made a deliberate decision to stop being the person who uses them and become the person who builds them.</p>
-            <p>I stepped away and reskilled in Software Development, AI Engineering and AWS Cloud Engineering.</p>
+            <p>I stepped away and reskilled in Software Development, AI Engineering and AWS Cloud Engineering, and recently completed a 530-hour AI Engineer internship at <a href="https://www.kudan.io" target="_blank" rel="noopener">Kudan GmbH</a>, building a conversational agent for their PRISM Cloud spatial data platform.</p>
             <p>I'm currently deepening my knowledge of JavaScript and learning to build with React to round out the front-end side of that pipeline.</p>
             <p>I'm now looking for a role where I can work across the full product pipeline, from idea validation to deployment.</p>
+            <p>Based in Berlin. English (working language), German B1.2, improving towards B2 and decided to get a C1 certification.</p>
+
 
             
             <div class="button-container">
@@ -73,13 +75,39 @@
             <h2><span class="stress">Projects</span></h2>
             <div class="project-card">
                 <div class="project-header">
-                    <h3 class="project-title">Resonate 🌿</h3>
+                    <h3 class="project-title">Conversational Agent for PRISM Cloud (Kudan Internship)</h3>
                     <div class="project-links">
-                        <a href="https://github.com/emilioquezadanavarro/Resonate-App" target="_blank">GitHub ↗</a>
+                        <a href="files/Internship_certificate.pdf" target="_blank">Certificate ↗</a>
                     </div>
                 </div>
                 <p class="project-description">
-                    An AI-powered journaling companion designed for mindful reflection. Features mood tracking, empathetic AI insights, and personalized music curation.
+                    A natural-language agent that lets users query a spatial data platform: 12 read-only tools, per-request row-level security, 704 unit and 75 integration tests, and a 46-case deterministic evaluation harness. Integrated into the platform's QA environment by Kudan's team. Proprietary code, so there is no public repository. Reference letter available on request.
+                </p>
+                <div class="project-stack">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">JWT</span>
+                    <span class="tag">Row Level Security</span>
+                    <span class="tag">Anthropic SDK</span>
+                    <span class="tag">Langfuse</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Terraform</span>
+                    <span class="tag">AWS</span>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Resonate 🌿 (graduation project) </h3>
+                    <div class="project-links">
+                        <a href="https://github.com/emilioquezadanavarro/Resonate-App" target="_blank">GitHub ↗</a>
+                        <a href="https://github.com/emilioquezadanavarro/Resonate-App/tree/aws-deployment" target="_blank">AWS - deployment ↗</a>
+
+                    </div>
+                </div>
+                <p class="project-description">
+                    A multi-agent AI journaling app with mood-matched music recommendations, a chat assistant with semantic memory, and a fail-closed safety layer that stores only safe entries. Deployed to AWS with Terraform and since torn down; the infrastructure code and architecture are in the AWS branch.
                 </p>
                 <div class="project-stack">
                     <span class="tag">Python</span>
@@ -89,6 +117,7 @@
                     <span class="tag">ChromaDB</span>
                     <span class="tag">OpenAI</span>
                     <span class="tag">Google Gemini</span>
+                    <span class="tag">Docker</span>
                     <span class="tag">Terraform</span>
                     <span class="tag">AWS</span>
 
@@ -100,10 +129,11 @@
                     <h3 class="project-title">Franz 🤖</h3>
                     <div class="project-links">
                         <a href="https://github.com/emilioquezadanavarro/soundfabrik-studio-assistant" target="_blank">GitHub ↗</a>
+                        <a href="https://recording-studio-assistant.streamlit.app/" target="_blank">Live Demo ↗</a>
                     </div>
                 </div>
                 <p class="project-description">
-                    A RAG studio assistant chatbot for a real Berlin recording studio. Guardrails, retrieval evals, lead capture into Supabase.
+                    A RAG assistant for a Berlin recording studio, built from the owners' requirements: it answers visitor questions from the studio's documents and saves leads to Supabase. Retrieval scored 1.00 recall@5 and 0.98 MRR on 21 cases. The public demo runs on synthetic data.
                 </p>
                 <div class="project-stack">
                     <span class="tag">Python</span>
@@ -165,6 +195,7 @@
                     <span class="tag">LLMs</span>
                     <span class="tag">Retrieval-Augmented Generation (RAG)</span>
                     <span class="tag">Agentic AI / Multi-Agent Systems</span>
+                    <span class="tag">Tool Calling</span>
                     <span class="tag">Prompt Engineering</span>
                     <span class="tag">LLM Evaluation</span>
                     <span class="tag">Text Preprocessing & Embeddings</span>
@@ -186,6 +217,7 @@
                     <span class="tag">Langfuse</span>
                     <span class="tag">Custom Evaluation Harnesses</span>
                     <span class="tag">Hallucination/Grounding Testing</span>
+                    <span class="tag">LLM-as-Judge Evals</span>
 
                 </div>
             </div>
@@ -203,6 +235,7 @@
                 <div class="stack-items">
                     <span class="tag">Python</span>
                     <span class="tag">Flask</span>
+                    <span class="tag">FastAPI</span>
                     <span class="tag">RESTful APIs</span>
                     <span class="tag">SQL</span>
                     <span class="tag">PostgreSQL</span>
@@ -210,12 +243,13 @@
                     <span class="tag">HTML/CSS</span>
                     <span class="tag">Jinja2</span>
                     <span class="tag">JavaScript</span>
+                    <span class="tag">Streamlit</span>
                 </div>
             </div>
             <div class="stack-group">
                 <span class="stack-label">Cloud & Infrastructure</span>
                 <div class="stack-items">
-                    <span class="tag">AWS (Lambda, RDS, S3, CloudWatch, IAM)</span>
+                    <span class="tag">AWS (Lambda, RDS, S3, CloudWatch, IAM, Lambda)</span>
                     <span class="tag">Terraform</span>
                     <span class="tag">AWS CDK</span>
                     <span class="tag">Docker</span>
@@ -237,7 +271,7 @@
             <div class="stack-group">
                 <span class="stack-label">Practices</span>
                 <div class="stack-items">
-                    <span class="tag">TDD</span>
+                    <span class="tag">Automated Testing (pytest)</span>
                     <span class="tag">Version Control (GitHub)</span>
                     <span class="tag">Incident Response & Root-Cause Analysis</span>
                     <span class="tag">Technical Documentation</span>
@@ -250,6 +284,7 @@
                     <span class="tag">Claude Code</span>
                     <span class="tag">Cursor</span>
                     <span class="tag">Codex</span>
+                    <span class="tag">Spec-Driven Development</span>
                 </div>
             </div>
 
@@ -270,7 +305,7 @@
         </div>
 
         <footer>
-            Designed & built by Emilio Quezada · 2026
+            Designed & built by Emilio Quezada Navarro · 2026
         </footer>
     </div>
 
